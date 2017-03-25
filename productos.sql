@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `productos`
 --
 
+
 CREATE TABLE `productos` (
   `id_producto` int(11) NOT NULL,
   `producto` varchar(400) NOT NULL,
@@ -44,8 +45,8 @@ CREATE TABLE `productos` (
 INSERT INTO `productos` (`id_producto`, `producto`, `descripcion`, `existencias`, `precio_compra`, `precio_venta`, `imagen_producto`, `posted_on`) VALUES
 (1, 'Usb', 'Roja', 50, 100, 150, NULL, '2017-03-23 14:46:06'),
 (2, 'Laptop', 'Acer', 4, 10000, 11900, NULL, NULL),
-(6, 'Bocinas', 'Sony', 5, 400, 600, NULL, '2017-03-23 05:29:06'),
-(7, 'Mouse', 'Inhalambrico ', 15, 150, 290, NULL, NULL);
+(3, 'Bocinas', 'Sony', 5, 400, 600, NULL, '2017-03-23 05:29:06'),
+(4, 'Mouse', 'Inhalambrico ', 15, 150, 290, NULL, NULL);
 
 --
 -- Índices para tablas volcadas
