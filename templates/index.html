@@ -1,0 +1,32 @@
+$def with(posts)
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+
+       <h1>Productos de la tienda</h1>
+
+       <table class="table table-striped table-borde table-hover table-condensed">
+       <body style="background-color:#E6E6FA;">
+       	 <th>Modificar</th>
+         <th>Borrar</th>
+         <th>Insertar</th>
+       		$for post in posts:
+       		<tr>
+
+           
+	            <td><a href='/view/$post.id_producto'>$post.producto</a></td>
+	           <td><a href='/edit/$post.id_producto' >Editar</a></td>
+	            <td><a href='/edit/$post.id_producto'>Borrar</a></td>
+	            
+      	
+            </tr>
+            
+
+       </table>
+          
+</body>
+</html>
